@@ -39,7 +39,7 @@ const navLinks = [
 const serviceCards: Array<{ key: string; number: string; english: string; title: string; copy: string; icon: IconName; style: string; photo: string }> = [
   { key: "retail", number: "01", english: "RETAIL", title: "จำหน่ายสินค้าปลีก", copy: "สินค้าอุปโภคบริโภคหลากหลายหมวดหมู่ สำหรับลูกค้าทั่วไป", icon: "cart", style: "retail", photo: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=900&q=80" },
   { key: "wholesale", number: "02", english: "WHOLESALE", title: "จำหน่ายสินค้าส่ง", copy: "จัดหาสินค้าสำหรับร้านค้า ผู้ประกอบการ และธุรกิจองค์กร", icon: "box", style: "wholesale", photo: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80" },
-  { key: "store", number: "03", english: "STOREFRONT SERVICES", title: "บริการจัดร้านค้า", copy: "คำปรึกษาด้านรูปแบบร้าน การจัดวางสินค้าและอุปกรณ์หน้าร้าน", icon: "store", style: "storefront", photo: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=900&q=80" },
+  { key: "store", number: "03", english: "STOREFRONT SERVICES", title: "บริการจัดร้านค้า", copy: "คำปรึกษาด้านรูปแบบร้าน การจัดวางสินค้าและอุปกรณ์หน้าร้าน", icon: "store", style: "storefront", photo: "/images/storefront-dusk.webp" },
 ];
 
 function Logo({ compact = false }: { compact?: boolean }) {
@@ -168,7 +168,7 @@ export default function Home() {
         ].map((p) => <div key={p.title} className="usp-item"><div className="usp-icon"><Icon name={p.icon} size={25}/></div><div><strong>{p.title}</strong><small>{p.desc}</small></div></div>)}
       </div></section>
       <section id="services" className="services-section section-space"><div className="container services-layout">
-        <div className="services-intro"><SectionTitle eyebrow="OUR BUSINESS SERVICES" title="บริการที่ตอบโจทย์ ทั้งลูกค้าทั่วไปและร้านค้า" detail="ธุรกิจค้าปลีก ค้าส่ง และบริการสำหรับร้านค้า เพื่อรองรับความต้องการในทุกด้าน" /></div>
+        <div className="services-intro"><h2 className="services-mobile-title">บริการหลักของเรา</h2><SectionTitle eyebrow="OUR BUSINESS SERVICES" title="บริการที่ตอบโจทย์ ทั้งลูกค้าทั่วไปและร้านค้า" detail="ธุรกิจค้าปลีก ค้าส่ง และบริการสำหรับร้านค้า เพื่อรองรับความต้องการในทุกด้าน" /></div>
         {serviceCards.map((card) => <article key={card.key} className={`service-card ${card.style}`}>
           <div className="service-photo" style={{ backgroundImage: `url('${card.photo}')` }} aria-hidden="true" />
           <div className="service-content"><div className="service-card-top"><div className="service-icon"><Icon name={card.icon} size={27}/></div><span>{card.number} / {card.english}</span></div><div className="service-body"><h3>{card.title}</h3><p>{card.copy}</p><button type="button" onClick={() => card.key === "wholesale" ? setPanel("quote") : card.key === "store" ? document.getElementById("contact")?.scrollIntoView({behavior:"smooth"}) : openCatalog()} className="text-link">ดูรายละเอียด <Icon name="chevron" size={15}/></button></div></div>
