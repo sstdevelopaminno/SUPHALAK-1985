@@ -430,3 +430,9 @@ body { font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif; }
   .category-art{height:69px}
   .category-caption{font-size:8.3px}
 }
+
+/* REFERENCE FOOTER FLOW: the approved corporate homepage goes from about band into footer.
+   Quote and inquiry actions remain available through the header, hero and footer modals. */
+.contact-section{display:none}
+.footer{scroll-margin-top:84px}
+@media (max-width:760px){.footer{scroll-margin-top:65px}}
