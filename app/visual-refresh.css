@@ -614,3 +614,15 @@ body { font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif; }
   .service-card,.service-card.retail{height:139px;min-height:139px}
   .category-art{height:56px}
 }
+
+
+/* MOBILE-SEARCH-ICON-PARITY — approved phone mockup has search, cart, menu */
+@media(max-width:760px){
+  .header-actions .search-btn{display:grid;place-items:center}
+  .header-actions{gap:4px}
+  .brand{max-width:calc(100% - 115px)}
+}
+@media(max-width:360px){
+  .brand-copy strong{font-size:9px}
+  .brand-copy small{font-size:6.2px}
+}
