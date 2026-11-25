@@ -55,7 +55,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .hero h1 .english-heading {
   font-size: clamp(30px,2.9vw,42px); line-height: 1.18; margin-top: 3px;
 }
-.mobile-hero-headline { display: none; }
+.mobile-hero-headline, .hero-mobile-description { display: none; }
 .hero h2 { font-size: clamp(17px,1.4vw,21px); line-height: 1.5; margin-bottom: 10px; }
 .hero-content > p { font-size: 14px; line-height: 1.8; max-width: 600px; margin-bottom: 21px; color: #d7e0e9; }
 .hero-buttons { gap: 12px; }
@@ -260,13 +260,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .hero h1.mobile-hero-headline em { color: #f1c77b; }
   .hero h1.mobile-hero-headline span { color: #f1c77b; }
   .hero h2 { display: none; }
-  .hero-content > p {
-    font-size: 12.5px; max-width: 65%; line-height: 1.75;
-    margin-bottom: 25px; color: #dce6f0;
+  .hero-content > p.hero-desktop-description { display: none; }
+  .hero-content > p.hero-mobile-description {
+    display: block; font-size: 13px; max-width: 66%; line-height: 1.7;
+    margin: 0 0 25px; color: #e0eaf3;
   }
   .hero-art {
     display: block; position: absolute; z-index: 1;
-    top: 52px; right: -30px; width: 45%; height: 290px;
+    top: 52px; right: -30px; width: 45%; height: 240px;
     transform: none; margin: 0; overflow: hidden;
     background: linear-gradient(180deg,#0a23431c,#071b32aa),url('/images/storefront-dusk.webp') center/cover;
     border-left: 1px solid #d3aa5d55; border-radius: 16px 0 0 16px;
@@ -296,7 +297,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
     font-size: 20px; line-height: 1.4; font-weight: 850;
   }
   .services-intro .section-title { display: none; }
-  .service-card { min-height: 222px; border-radius: 11px; border: 1px solid #d8af7777; box-shadow: 0 12px 22px #010b1c50; }
+  .service-card { min-height: 240px; border-radius: 11px; border: 1px solid #d8af7777; box-shadow: 0 12px 22px #010b1c50; }
   .service-card:after, .service-card.retail:after { background: linear-gradient(180deg,#071d3520 0%,#061b34a0 46%,#06192fea 85%); }
   .service-photo { opacity: 1; }
   .service-content { padding: 10px; }
@@ -305,9 +306,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .service-icon svg { width: 21px; height: 21px; }
   .service-card-top > span { font-size: 0; }
   .service-body { padding-top: 8px; }
-  .service-body h3 { color: #fff; font-size: 12.5px; line-height: 1.35; margin-bottom: 6px; }
+  .service-body h3 { color: #fff; font-size: 13px; line-height: 1.4; margin-bottom: 7px; }
   .service-body p, .retail .service-body p {
-    font-size: 10px; line-height: 1.4; color: #e8edf4;
+    font-size: 10.5px; line-height: 1.45; color: #e8edf4;
     display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
     overflow: hidden; margin-bottom: 9px;
   }
@@ -378,7 +379,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .icon-btn { width: 33px; height: 33px; }
   .header-actions { gap: 4px; }
   .hero h1.mobile-hero-headline { font-size: 25px; max-width: 72%; }
-  .hero-content > p { font-size: 11.5px; }
+  .hero-content > p.hero-mobile-description { font-size: 12.5px; }
   .hero-art { width: 45%; right: -28px; }
   .hero-highlights span { font-size: 9px; }
 }
