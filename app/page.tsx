@@ -176,7 +176,7 @@ export default function Home() {
       </div></section>
       <section id="categories" className="categories-section"><div className="container">
         <div className="categories-head"><SectionTitle eyebrow="PRODUCT CATEGORIES" title="หมวดสินค้าแนะนำ" detail="สินค้าอุปโภคบริโภคและอุปกรณ์ที่คัดสรรให้ครอบคลุมความต้องการ"/><button className="all-categories" onClick={() => openCatalog()}>ดูสินค้าทั้งหมด <Icon name="arrow" size={17}/></button></div>
-        <div className="categories-grid">{categories.map((c) => <button type="button" key={c.id} className="category-card" onClick={() => openCatalog(c.id)} aria-label={`เปิดหมวด ${c.title}`}><div className="category-art"><Image src={c.image} alt="" width={240} height={155} /></div><span className="category-caption">{c.title}<Icon name="chevron" size={15}/></span></button>)}</div>
+        <div className="categories-grid">{categories.map((c) => <button type="button" key={c.id} className="category-card" onClick={() => openCatalog(c.id)} aria-label={`เปิดหมวด ${c.title}`}><div className="category-art"><span className={`category-photo category-photo-${c.id}`} aria-hidden="true" /></div><span className="category-caption">{c.title}<Icon name="chevron" size={15}/></span></button>)}</div>
       </div></section>
       <section className="mobile-trust" aria-label="ทำไมต้องเลือก ศุภลักษณ์ 1985">
         <div className="container">
