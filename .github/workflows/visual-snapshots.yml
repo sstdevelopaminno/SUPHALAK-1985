@@ -50,6 +50,32 @@ jobs:
       - name: Capture 390x844 Mobile viewport
         run: |
           npx playwright screenshot --browser chromium --viewport-size="390,844" http://127.0.0.1:3000/ evidence/mobile.png
+      - name: Verify responsive legibility and quote form
+        run: |
+          node --input-type=module <<'NODE'
+          import { chromium } from "playwright";
+          const browser = await chromium.launch({ headless: true });
+          try {
+            for (const [name, width, height] of [["desktop", 1600, 856], ["mobile", 390, 844]]) {
+              const page = await browser.newPage({ viewport: { width, height } });
+              await page.goto("http://127.0.0.1:3000/", { waitUntil: "networkidle" });
+              const report = await page.evaluate(() => {
+                const heading = document.querySelector(innerWidth <= 760 ? ".mobile-hero-headline" : ".desktop-hero-headline");
+                const h = heading ? parseFloat(getComputedStyle(heading).fontSize) : 0;
+                return { overflow: document.documentElement.scrollWidth > innerWidth + 2, headingPx: h };
+              });
+              if (report.overflow) throw new Error(name + ": horizontal page overflow");
+              if (report.headingPx < (name === "desktop" ? 32 : 24)) throw new Error(name + ": heading too small " + report.headingPx);
+              await page.locator(".hero-buttons .btn-outline").click();
+              await page.locator(".quote-form input").first().waitFor();
+              const inputSize = await page.locator(".quote-form input").first().evaluate(el => parseFloat(getComputedStyle(el).fontSize));
+              if (inputSize < (name === "desktop" ? 14 : 16)) throw new Error(name + ": form input too small " + inputSize);
+              await page.screenshot({ path: "evidence/quote-" + name + ".png" });
+              console.log(JSON.stringify({ name, ...report, quoteInputPx: inputSize }));
+              await page.close();
+            }
+          } finally { await browser.close(); }
+          NODE
       - name: Save screenshot evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
