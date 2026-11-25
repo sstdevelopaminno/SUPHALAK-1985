@@ -626,3 +626,166 @@ body { font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif; }
   .brand-copy strong{font-size:9px}
   .brand-copy small{font-size:6.2px}
 }
+
+
+/* FINAL APPROVED-MOCKUP ALIGNMENT V2 */
+/* Desktop: tighten the live page to the proportions of the approved corporate mockup. */
+@media (min-width:1081px){
+  .announcement{height:28px!important}
+  .announcement-inner{font-size:9px!important;letter-spacing:.9px!important}
+  .site-header{height:68px!important}
+  .header-content{gap:20px!important}
+  .brand{min-width:270px!important}
+  .brand-seal{width:46px!important;height:46px!important}
+  .brand-copy strong{font-size:13px!important}
+  .brand-copy small{font-size:9px!important}
+  .main-nav a{font-size:11px!important}
+  .icon-btn{width:36px!important;height:36px!important}
+  .partner-btn{height:36px!important;font-size:10px!important;padding-inline:11px!important}
+
+  .hero{min-height:350px!important;height:350px!important}
+  .hero-layout{min-height:350px!important;height:350px!important;grid-template-columns:1.08fr .92fr!important}
+  .hero-content{padding:28px 0 26px 10px!important}
+  .hero-eyebrow{font-size:8.5px!important;letter-spacing:1.45px!important;margin-bottom:10px!important}
+  .hero h1.desktop-hero-headline{font-size:37px!important;line-height:1.08!important;margin-bottom:0!important}
+  .english-heading{font-size:32px!important;line-height:1.08!important;margin-top:5px!important}
+  .hero-content h2{font-size:16px!important;line-height:1.34!important;margin:13px 0 8px!important}
+  .hero-content>p{font-size:11px!important;line-height:1.62!important;max-width:610px!important;margin-bottom:13px!important}
+  .hero-buttons{gap:9px!important;margin-top:11px!important}
+  .hero-buttons .btn{min-height:39px!important;height:39px!important;font-size:10.5px!important;padding-inline:15px!important;border-radius:8px!important}
+  .hero-highlights{gap:17px!important;margin-top:12px!important}
+  .hero-highlights span{font-size:9.5px!important}
+  .hero-highlights svg{width:14px!important;height:14px!important}
+
+  .hero-art{height:350px!important}
+  .hero-logo-disc{top:42px!important;width:205px!important;height:205px!important;box-shadow:0 0 0 5px #dfb766,0 0 0 11px #d2b26a35,0 22px 38px #0313258f!important}
+  .hero-ring.ring1{width:302px!important;height:302px!important}
+  .hero-ring.ring2{width:270px!important;height:270px!important}
+  .hero-ring.ring3{width:238px!important;height:238px!important}
+  .hero-logo-name{top:255px!important}
+  .hero-logo-name strong{font-size:17px!important}
+  .hero-logo-name small{font-size:7px!important}
+  .hero-supermarket{width:39%!important;opacity:.58!important}
+
+  .usp-grid{min-height:56px!important}
+  .usp-item{padding:8px 13px!important}
+  .usp-icon{width:36px!important;height:36px!important}
+  .usp-icon svg{width:18px!important;height:18px!important}
+  .usp-item strong{font-size:11px!important}
+  .usp-item small{font-size:9px!important}
+
+  .services-section{padding:24px 0 25px!important}
+  .services-layout{gap:12px!important;grid-template-columns:1.05fr repeat(3,minmax(0,1fr))!important}
+  .services-intro{padding:4px 12px 0 0!important}
+  .services-intro .section-title h2{font-size:23px!important;line-height:1.24!important}
+  .services-intro .section-title p{font-size:10.5px!important;line-height:1.6!important}
+  .eyebrow-dark{font-size:8px!important}
+  .service-card{min-height:176px!important;height:176px!important;border-radius:12px!important}
+  .service-content{padding:12px!important}
+  .service-card-top span{font-size:8px!important}
+  .service-icon svg{width:20px!important;height:20px!important}
+  .service-body h3{font-size:16px!important;margin-bottom:3px!important}
+  .service-body p{font-size:9px!important;line-height:1.45!important;margin-bottom:7px!important}
+  .service-body .text-link{font-size:9px!important}
+
+  .categories-section{padding:20px 0 22px!important}
+  .categories-head{margin-bottom:11px!important}
+  .categories-head .section-title h2{font-size:21px!important}
+  .categories-head .section-title p{font-size:10px!important}
+  .category-art{height:82px!important}
+  .category-caption{min-height:31px!important;font-size:9px!important;padding:5px!important}
+
+  .work-section{padding:20px 0 23px!important}
+  .work-grid{gap:10px!important}
+  .work-intro .section-title h2{font-size:21px!important}
+  .work-intro .section-title p{font-size:10px!important}
+  .step-card{min-height:75px!important;padding:10px 12px!important}
+  .step-icon{width:36px!important;height:36px!important}
+  .step-icon svg{width:20px!important;height:20px!important}
+  .step-card b{font-size:14px!important}
+  .step-card strong{font-size:11px!important}
+  .step-card small{font-size:8.5px!important}
+
+  .about-content{min-height:104px!important;padding:17px 0!important;gap:20px!important}
+  .about-heading h2{font-size:19px!important}
+  .about-heading strong{font-size:14px!important}
+  .about-content>p{font-size:9.5px!important;line-height:1.55!important}
+  .about-content .btn{min-height:36px!important;height:36px!important;font-size:9.5px!important}
+
+  .footer-grid{padding:19px 0 14px!important}
+  .footer-brand p,.footer-col a,.footer-col button{font-size:9px!important}
+  .footer-col>strong{font-size:10px!important}
+  .footer-bottom{min-height:38px!important;font-size:8px!important}
+}
+
+/* Use the approved photo set consistently instead of mismatched external card images. */
+.service-card .service-photo{
+  background-image:url('/images/retail-product-sprite.webp')!important;
+  background-size:300% 300%!important;
+  background-repeat:no-repeat!important;
+}
+.service-card.retail .service-photo{background-position:0% 0%!important}
+.service-card.wholesale .service-photo{background-position:50% 0%!important}
+.service-card.storefront .service-photo{background-position:100% 0%!important}
+.category-art{
+  background-image:url('/images/retail-product-sprite.webp')!important;
+  background-size:300% 300%!important;
+  background-repeat:no-repeat!important;
+}
+.category-art img{opacity:0!important}
+.category-card:nth-child(1) .category-art{background-position:0% 50%!important}
+.category-card:nth-child(2) .category-art{background-position:50% 50%!important}
+.category-card:nth-child(3) .category-art{background-position:100% 50%!important}
+.category-card:nth-child(4) .category-art{background-position:0% 100%!important}
+.category-card:nth-child(5) .category-art{background-position:50% 100%!important}
+.category-card:nth-child(6) .category-art{background-position:100% 100%!important}
+
+/* Mobile: follow the approved phone composition and show the retail-shelving category as item five. */
+@media (max-width:760px){
+  .announcement{height:24px!important}
+  .announcement-inner{min-height:24px!important;font-size:6.8px!important;padding-inline:1px!important}
+  .announcement-thai{font-size:6.8px!important}
+  .site-header{height:58px!important}
+  .header-content{height:58px!important;min-height:58px!important}
+  .brand-seal{width:35px!important;height:35px!important}
+  .brand-copy strong{font-size:9px!important}
+  .brand-copy small{font-size:6.4px!important}
+  .header-actions .icon-btn{width:32px!important;height:32px!important}
+  .main-nav{top:58px!important;height:calc(100dvh - 58px)!important}
+  .mobile-backdrop{inset:58px 0 0!important}
+
+  .hero-content{padding-top:20px!important;padding-bottom:12px!important}
+  .hero h1.mobile-hero-headline{max-width:62%!important;font-size:22px!important;line-height:1.17!important;margin-bottom:7px!important}
+  .hero-content>p{font-size:9px!important;line-height:1.55!important;margin:8px 0 12px!important;max-width:100%!important}
+  .hero-buttons .btn{height:35px!important;min-height:35px!important;font-size:8.7px!important}
+  .hero-highlights{margin-top:10px!important}
+  .hero-highlights span{font-size:7.3px!important}
+  .hero-art{top:43px!important;width:43%!important;height:150px!important}
+  .hero-art .hero-logo-disc{width:62px!important;height:62px!important;top:12px!important}
+  .hero-art .hero-logo-name{top:82px!important}
+  .hero-art::before{bottom:8px!important;font-size:8px!important}
+
+  .services-section{padding:11px 0 14px!important}
+  .services-intro{padding-bottom:7px!important}
+  .services-intro .section-title h2{font-size:16px!important}
+  .service-card,.service-card.retail{height:144px!important;min-height:144px!important}
+  .service-content{padding:7px!important}
+  .service-body h3{font-size:10.2px!important}
+  .service-body p{font-size:7.5px!important}
+  .service-body .text-link{font-size:8px!important}
+
+  .categories-section{padding:8px 0 12px!important}
+  .categories-head .section-title h2{font-size:14px!important}
+  .categories-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:5px!important}
+  .category-card:nth-child(5){display:none!important}
+  .category-card:nth-child(6){display:flex!important;order:5!important}
+  .category-art{height:62px!important}
+  .category-caption{min-height:31px!important;font-size:7.4px!important;line-height:1.25!important;padding:3px 1px!important}
+
+  .mobile-trust{padding:3px 0 13px!important}
+  .mobile-trust h2{font-size:12px!important;margin-bottom:7px!important}
+  .mobile-trust-item{padding:7px 2px 8px!important}
+  .mobile-trust-item svg{width:18px!important;height:18px!important}
+  .mobile-trust-item strong{font-size:7.6px!important}
+  .mobile-trust-item small{font-size:6.4px!important}
+}
