@@ -142,7 +142,8 @@ export default function Home() {
         <div className="container hero-layout">
           <div className="hero-content">
             <div className="hero-eyebrow"><span /> EVERYDAY ESSENTIALS FOR PEOPLE & BUSINESSES</div>
-            <h1>บริษัท ศุภลักษณ์ <em>1985</em> จำกัด<span className="english-heading">SUPHALAK 1985 CO., LTD.</span></h1>
+            <h1 className="desktop-hero-headline">บริษัท ศุภลักษณ์ <em>1985</em> จำกัด<span className="english-heading">SUPHALAK 1985 CO., LTD.</span></h1>
+            <h1 className="mobile-hero-headline">ศุภลักษณ์ <em>1985</em><br/>ครบทุกความต้องการ<br/><span>สินค้าร้านค้าและค้าส่ง</span><br/>ในที่เดียว</h1>
             <h2>ครบทุกความต้องการสินค้าอุปโภคบริโภค<br/>ทั้งค้าปลีก ค้าส่ง และบริการจัดร้านค้าในที่เดียว</h2>
             <p>พันธมิตรด้านสินค้าอุปโภคบริโภคสำหรับทุกความต้องการ ครอบคลุมการจัดหา กระจายสินค้า และบริการจัดร้านอย่างมืออาชีพ เพื่อสนับสนุนธุรกิจของคุณ</p>
             <div className="hero-buttons">
@@ -177,6 +178,19 @@ export default function Home() {
         <div className="categories-head"><SectionTitle eyebrow="PRODUCT CATEGORIES" title="หมวดสินค้าแนะนำ" detail="สินค้าอุปโภคบริโภคและอุปกรณ์ที่คัดสรรให้ครอบคลุมความต้องการ"/><button className="all-categories" onClick={() => openCatalog()}>ดูสินค้าทั้งหมด <Icon name="arrow" size={17}/></button></div>
         <div className="categories-grid">{categories.map((c) => <button type="button" key={c.id} className="category-card" onClick={() => openCatalog(c.id)} aria-label={`เปิดหมวด ${c.title}`}><div className="category-art"><Image src={c.image} alt="" width={240} height={155} /></div><span className="category-caption">{c.title}<Icon name="chevron" size={15}/></span></button>)}</div>
       </div></section>
+      <section className="mobile-trust" aria-label="ทำไมต้องเลือก ศุภลักษณ์ 1985">
+        <div className="container">
+          <h2>ทำไมต้องเลือก <span>ศุภลักษณ์ 1985</span></h2>
+          <div className="mobile-trust-grid">
+            {[
+              { icon:"award" as IconName, title:"ประสบการณ์", detail:"ความน่าเชื่อถือ" },
+              { icon:"shield" as IconName, title:"สินค้าคุณภาพ", detail:"ครบทุกหมวดหมู่" },
+              { icon:"user" as IconName, title:"ดูแลลูกค้า", detail:"อย่างมืออาชีพ" },
+              { icon:"handshake" as IconName, title:"พันธมิตร", detail:"ธุรกิจของคุณ" }
+            ].map((item)=><div className="mobile-trust-item" key={item.title}><Icon name={item.icon} size={25}/><strong>{item.title}</strong><small>{item.detail}</small></div>)}
+          </div>
+        </div>
+      </section>
       <section className="work-section" id="how-it-works"><div className="container work-grid">
         <div className="work-intro"><SectionTitle eyebrow="HOW IT WORKS" title="ติดต่อสั่งสินค้าได้ใน 3 ขั้นตอน" detail="ขั้นตอนง่าย ๆ สำหรับลูกค้าทั่วไป ผู้ประกอบการ และร้านค้า"/></div>
         {[
