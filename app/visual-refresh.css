@@ -221,6 +221,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .about-content > .btn { grid-column: 1 / -1; }
 }
 
+.mobile-trust { display: none; }
+
 /* Phone — proportionally adapted from the approved mockup, with real readable type */
 @media(max-width: 760px) {
   html { scroll-padding-top: 70px; }
