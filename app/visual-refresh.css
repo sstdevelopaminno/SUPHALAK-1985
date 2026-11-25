@@ -253,20 +253,20 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-eyebrow span { width: 22px; flex: none; }
   .hero h1.desktop-hero-headline { display: none; }
   .hero h1.mobile-hero-headline {
-    display: block; max-width: 63%; margin: 0 0 16px;
-    font-size: clamp(26px,6.8vw,33px); line-height: 1.32;
+    display: block; max-width: 72%; margin: 0 0 16px;
+    font-size: clamp(25px,6.5vw,30px); line-height: 1.29;
     font-weight: 900; letter-spacing: -.5px; color: #fff;
   }
   .hero h1.mobile-hero-headline em { color: #f1c77b; }
   .hero h1.mobile-hero-headline span { color: #f1c77b; }
   .hero h2 { display: none; }
   .hero-content > p {
-    font-size: 12px; max-width: 60%; line-height: 1.75;
+    font-size: 12.5px; max-width: 65%; line-height: 1.75;
     margin-bottom: 25px; color: #dce6f0;
   }
   .hero-art {
     display: block; position: absolute; z-index: 1;
-    top: 52px; right: -15px; width: 48%; height: 290px;
+    top: 52px; right: -30px; width: 45%; height: 290px;
     transform: none; margin: 0; overflow: hidden;
     background: linear-gradient(180deg,#0a23431c,#071b32aa),url('/images/storefront-dusk.webp') center/cover;
     border-left: 1px solid #d3aa5d55; border-radius: 16px 0 0 16px;
@@ -274,7 +274,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .hero-ring { display: none; }
   .hero-logo-disc {
-    top: 26px; width: 106px; height: 106px;
+    top: 26px; width: 96px; height: 96px;
     box-shadow: 0 0 0 4px #d6a452,0 10px 28px #06162777;
   }
   .hero-logo-name { top: 149px; width: 100%; }
@@ -377,9 +377,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .brand-copy small { font-size: 7px; }
   .icon-btn { width: 33px; height: 33px; }
   .header-actions { gap: 4px; }
-  .hero h1.mobile-hero-headline { font-size: 25px; }
+  .hero h1.mobile-hero-headline { font-size: 25px; max-width: 72%; }
   .hero-content > p { font-size: 11.5px; }
-  .hero-art { width: 47%; }
+  .hero-art { width: 45%; right: -28px; }
   .hero-highlights span { font-size: 9px; }
 }
 @media(prefers-reduced-motion:reduce) {
