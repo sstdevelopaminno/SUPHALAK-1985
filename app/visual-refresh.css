@@ -304,7 +304,7 @@ body { font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif; }
     border-radius:11px 0 0 11px;
     background:
       linear-gradient(90deg,#08244488 0%,#0824442b 30%,#061b34a3 100%),
-      url('https://images.unsplash.com/photo-1604719312566-8912e9c8a213?w=680&q=85') center / cover;
+      url('/images/storefront-dusk.webp') center / cover;
     box-shadow:-8px 13px 20px #04122765;
   }
   .hero-art::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(180deg,transparent,#06172ddc);z-index:0}
