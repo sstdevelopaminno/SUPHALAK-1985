@@ -267,7 +267,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .hero-art {
     display: block; position: absolute; z-index: 1;
-    top: 52px; right: -30px; width: 45%; height: 240px;
+    top: 52px; right: -30px; width: 45%; height: 212px;
     transform: none; margin: 0; overflow: hidden;
     background: linear-gradient(180deg,#0a23431c,#071b32aa),url('/images/storefront-dusk.webp') center/cover;
     border-left: 1px solid #d3aa5d55; border-radius: 16px 0 0 16px;
