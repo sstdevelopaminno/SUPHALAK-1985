@@ -43,13 +43,13 @@ jobs:
           echo "$headers"
           echo "$headers" | grep -Eq '^HTTP/.* 308'
           echo "$headers" | grep -Eiq '^location: /'
-      - name: Capture 1440 px Desktop full page
+      - name: Capture 1600x856 Desktop viewport
         run: |
           mkdir -p evidence
-          npx playwright screenshot --browser chromium --viewport-size="1440,900" --full-page http://127.0.0.1:3000/ evidence/desktop.png
-      - name: Capture 390 px Mobile full page
+          npx playwright screenshot --browser chromium --viewport-size="1600,856" http://127.0.0.1:3000/ evidence/desktop.png
+      - name: Capture 390x844 Mobile viewport
         run: |
-          npx playwright screenshot --browser chromium --viewport-size="390,844" --full-page http://127.0.0.1:3000/ evidence/mobile.png
+          npx playwright screenshot --browser chromium --viewport-size="390,844" http://127.0.0.1:3000/ evidence/mobile.png
       - name: Save screenshot evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
