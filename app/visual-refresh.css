@@ -804,3 +804,104 @@ body { font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif; }
   background-image:url('/images/storefront-dusk.webp')!important;
   background-size:cover!important;background-position:center!important;
 }
+
+
+/* VIEWPORT-MATCH V3 1600x856 / 390x844 */
+@media (min-width:1081px){
+  .announcement{height:24px!important}
+  .announcement-inner{min-height:24px!important;font-size:8px!important}
+  .site-header{height:58px!important}
+  .header-content{height:58px!important;min-height:58px!important}
+  .brand-seal{width:39px!important;height:39px!important}
+  .brand-copy strong{font-size:11px!important}
+  .brand-copy small{font-size:7.7px!important}
+  .main-nav{gap:20px!important}
+  .main-nav a{font-size:9.5px!important}
+  .icon-btn{width:32px!important;height:32px!important;border-radius:8px!important}
+  .partner-btn{height:32px!important;font-size:9px!important;padding-inline:10px!important}
+
+  .hero{height:285px!important;min-height:285px!important}
+  .hero-layout{height:285px!important;min-height:285px!important}
+  .hero-content{padding:19px 0 16px 9px!important}
+  .hero-eyebrow{font-size:7.4px!important;margin-bottom:7px!important}
+  .hero h1.desktop-hero-headline{font-size:30px!important;line-height:1.06!important}
+  .english-heading{font-size:27px!important;margin-top:3px!important}
+  .hero-content h2{font-size:13px!important;line-height:1.28!important;margin:9px 0 6px!important}
+  .hero-content>p{font-size:9.2px!important;line-height:1.5!important;max-width:570px!important;margin:0 0 10px!important}
+  .hero-buttons{gap:8px!important;margin-top:8px!important}
+  .hero-buttons .btn{height:34px!important;min-height:34px!important;font-size:9px!important;padding-inline:13px!important}
+  .hero-highlights{margin-top:8px!important;gap:14px!important}
+  .hero-highlights span{font-size:8.2px!important}
+  .hero-highlights svg{width:12px!important;height:12px!important}
+
+  .hero-art{height:285px!important}
+  .hero-logo-disc{top:27px!important;width:170px!important;height:170px!important}
+  .hero-ring.ring1{width:252px!important;height:252px!important}
+  .hero-ring.ring2{width:224px!important;height:224px!important}
+  .hero-ring.ring3{width:196px!important;height:196px!important}
+  .hero-logo-name{top:207px!important}
+  .hero-logo-name strong{font-size:15px!important}
+  .hero-logo-name small{font-size:6px!important}
+  .hero-supermarket{width:40%!important}
+
+  .usp-strip{height:45px!important}
+  .usp-grid{min-height:45px!important;height:45px!important}
+  .usp-item{padding:5px 10px!important}
+  .usp-icon{width:31px!important;height:31px!important}
+  .usp-item strong{font-size:9.5px!important}
+  .usp-item small{font-size:7.5px!important;margin-top:1px!important}
+
+  .services-section{padding:14px 0 15px!important}
+  .services-layout{gap:10px!important}
+  .services-intro{padding:2px 7px 0 0!important}
+  .services-intro .section-title h2{font-size:19px!important;line-height:1.15!important}
+  .services-intro .section-title p{font-size:8.5px!important;line-height:1.5!important;margin-top:7px!important}
+  .gold-underline{margin-top:9px!important}
+  .service-card{height:132px!important;min-height:132px!important}
+  .service-content{padding:9px!important}
+  .service-body h3{font-size:13px!important}
+  .service-body p{font-size:7.6px!important;margin:4px 0 6px!important}
+  .service-body .text-link{font-size:7.8px!important}
+  .service-card-top span{font-size:6.8px!important}
+
+  .categories-section{padding:12px 0 13px!important}
+  .categories-head{margin-bottom:7px!important}
+  .categories-head .section-title h2{font-size:17px!important}
+  .categories-head .section-title p{font-size:8px!important;margin-top:3px!important}
+  .category-art{height:58px!important}
+  .category-caption{min-height:24px!important;font-size:7.5px!important;padding:3px!important}
+  .all-categories{font-size:8px!important}
+
+  .work-section{padding:11px 0 13px!important}
+  .work-layout{grid-template-columns:.85fr 2.15fr!important;gap:15px!important}
+  .work-intro .section-title h2{font-size:17px!important;line-height:1.15!important}
+  .work-intro .section-title p{font-size:7.8px!important;margin-top:5px!important}
+  .work-grid{gap:8px!important}
+  .step-card{min-height:61px!important;padding:7px 9px!important;border-radius:10px!important}
+  .step-icon{width:29px!important;height:29px!important}
+  .step-card b{font-size:11px!important}
+  .step-card strong{font-size:9px!important}
+  .step-card small{font-size:7px!important;margin-top:1px!important}
+
+  .about-content{min-height:70px!important;padding:10px 0!important;gap:15px!important}
+  .about-heading h2{font-size:15px!important}
+  .about-heading strong{font-size:11px!important}
+  .about-content>p{font-size:7.8px!important;line-height:1.4!important}
+  .about-content .btn{height:31px!important;min-height:31px!important;font-size:8px!important}
+
+  .footer-grid{padding:11px 0 8px!important;gap:18px!important}
+  .footer-brand .brand-seal{width:34px!important;height:34px!important}
+  .footer-brand p,.footer-col a,.footer-col button{font-size:7.5px!important;line-height:1.45!important}
+  .footer-col>strong{font-size:8.5px!important;margin-bottom:5px!important}
+  .footer-bottom{min-height:28px!important;font-size:6.8px!important;padding:5px 0!important}
+}
+
+/* Mobile reference intentionally ends after the trust row. */
+@media (max-width:760px){
+  .work-section,.about-band,.footer{display:none!important}
+  .hero{min-height:0!important}
+  .hero-content{padding-bottom:10px!important}
+  .services-section{padding-bottom:11px!important}
+  .categories-section{padding-bottom:9px!important}
+  .mobile-trust{padding-bottom:10px!important}
+}
