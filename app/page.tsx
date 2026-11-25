@@ -46,7 +46,7 @@ function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <a href="#home" className={`brand ${compact ? "brand-small" : ""}`} aria-label="SUPHALAK 1985 หน้าแรก">
       <span className="brand-seal"><Image src="/images/lion.webp" width={52} height={52} alt="ตราสัญลักษณ์สิงโตมงกุฎ SUPHALAK 1985" priority /></span>
-      <span className="brand-copy"><strong>บริษัท ศุภลักษณ์ 1985 จำกัด</strong><small>SUPHALAK 1985 CO., LTD.</small></span>
+      <span className="brand-copy"><strong>บริษัท ศุภลักษณ์ <span className="brand-year">1985</span> จำกัด</strong><small>SUPHALAK <span className="brand-year">1985</span> CO., LTD.</small></span>
     </a>
   );
 }
@@ -142,8 +142,8 @@ export default function Home() {
         <div className="container hero-layout">
           <div className="hero-content">
             <div className="hero-eyebrow"><span /> EVERYDAY ESSENTIALS FOR PEOPLE & BUSINESSES</div>
-            <h1 className="desktop-hero-headline">บริษัท ศุภลักษณ์ <em>1985</em> จำกัด<span className="english-heading">SUPHALAK 1985 CO., LTD.</span></h1>
-            <h1 className="mobile-hero-headline">ศุภลักษณ์ <em>1985</em><br/>ครบทุกความต้องการ<br/><span>สินค้าร้านค้าและค้าส่ง</span><br/>ในที่เดียว</h1>
+            <h1 className="desktop-hero-headline">บริษัท ศุภลักษณ์ <em className="brand-year">1985</em> จำกัด<span className="english-heading">SUPHALAK <span className="brand-year">1985</span> CO., LTD.</span></h1>
+            <h1 className="mobile-hero-headline">ศุภลักษณ์ <em className="brand-year">1985</em><br/>ครบทุกความต้องการ<br/><span>สินค้าร้านค้าและค้าส่ง</span><br/>ในที่เดียว</h1>
             <h2>ครบทุกความต้องการสินค้าอุปโภคบริโภค<br/>ทั้งค้าปลีก ค้าส่ง และบริการจัดร้านค้าในที่เดียว</h2>
             <p className="hero-desktop-description">พันธมิตรด้านสินค้าอุปโภคบริโภคสำหรับทุกความต้องการ ครอบคลุมการจัดหา กระจายสินค้า และบริการจัดร้านอย่างมืออาชีพ เพื่อสนับสนุนธุรกิจของคุณ</p>
             <p className="hero-mobile-description">สินค้าครบทั้งค้าปลีกและค้าส่ง พร้อมบริการจัดหาและสนับสนุนร้านค้าอย่างมืออาชีพ</p>
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="hero-art" aria-label="โลโก้สิงโตมงกุฎของบริษัท">
             <div className="hero-ring ring1"/><div className="hero-ring ring2"/><div className="hero-ring ring3"/>
             <div className="hero-logo-disc"><Image src="/images/lion.webp" alt="ตราสัญลักษณ์สิงโตสวมมงกุฎ SUPHALAK 1985" width={360} height={360} priority /></div>
-            <div className="hero-logo-name"><strong>SUPHALAK 1985</strong><small>RETAIL · WHOLESALE · STOREFRONT</small></div>
+            <div className="hero-logo-name"><strong>SUPHALAK <span className="brand-year">1985</span></strong><small>RETAIL · WHOLESALE · STOREFRONT</small></div>
           </div>
         </div>
       </section>
