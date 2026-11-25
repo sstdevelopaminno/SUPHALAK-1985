@@ -21,13 +21,24 @@ npm run build
 npm run start
 ```
 
-## Deploy บน Vercel (เจ้าของโครงการดำเนินการเอง)
+## Production release — 25 พฤศจิกายน 2569
 
-1. อัปโหลดโปรเจกต์นี้เข้า **GitHub repository ใหม่สำหรับ SUPHALAK 1985** แยกจากโปรเจกต์ลูกค้าอื่น
-2. ไปที่ Vercel → Add New → Project → Import Git Repository
-3. เลือก Repository ที่อัปโหลด และตั้งค่า Framework Preset: **Next.js**, Root Directory: `./`
-4. ให้ Vercel ตรวจจับ Build Command (`next build`) และ Output Directory อัตโนมัติ แล้วกด Deploy
-5. ไม่มี Environment Variables หรือฐานข้อมูลที่ต้องเชื่อมต่อในเว็บไซต์ต้นแบบนี้
+- GitHub: `sstdevelopaminno/SUPHALAK-1985` (branch `main`)
+- Vercel Project: `suphalak-1985`
+- Production Domain: `https://suphalak1985.com`
+- เว็บไซต์ Next.js พร้อมดีไซน์กรมท่าและทอง รองรับหน้าจอ Desktop/Mobile
+- เชื่อมต่อ Vercel Git Integration เพื่อให้การ Push ไปยัง Production Branch เริ่ม Deployment อัตโนมัติ
+- การขึ้น Production ไม่ได้เปิดระบบชำระเงินหรือรับออร์เดอร์จริง; รายการสินค้าเป็นข้อมูลสาธิต
+
+## ทดสอบก่อนเผยแพร่
+
+```bash
+npm install
+npm run typecheck
+npm run build
+```
+
+ตรวจสอบผล Build, Domain Alias และหน้าเว็บไซต์จริงผ่าน Vercel Dashboard หลังการ Deploy
 
 ## โครงสร้างโค้ด
 
