@@ -205,3 +205,228 @@ body { font-family:"Noto Sans Thai",Tahoma,Arial,sans-serif; }
   .hero-art .hero-logo-name strong { font-size: 10px; }
   .hero-art .hero-logo-name small { font-size: 5px; }
 }
+
+
+/* APPROVED REFERENCE MATCH — 25 NOV 2026 */
+/* The large-screen composition follows the approved wide corporate reference:
+   compact gold brand bar, two-column lion/store hero, cream service/category rows. */
+.mobile-hero-headline,.mobile-trust{display:none}
+@media (min-width: 1081px){
+  .hero{min-height:470px}
+  .hero-layout{min-height:470px;grid-template-columns:1.08fr .92fr}
+  .hero-content{padding:40px 0 40px 12px}
+  .hero-art{height:445px}
+  .hero-logo-disc{top:62px;width:276px;height:276px}
+  .hero-logo-name{top:345px}
+  .hero-ring.ring1{width:385px;height:385px}
+  .hero-ring.ring2{width:347px;height:347px}
+  .hero-ring.ring3{width:308px;height:308px}
+  .hero-supermarket{width:36%;opacity:.76}
+  .services-section{padding:36px 0 38px}
+  .services-layout{grid-template-columns:1.05fr repeat(3,minmax(0,1fr));gap:14px}
+  .service-card{min-height:233px}
+  .categories-section{padding:30px 0 35px}
+  .category-art{height:117px}
+  .work-section{padding:27px 0 32px}
+  .about-content{min-height:130px;padding-block:21px}
+}
+/* Match the approved smartphone composition, not the earlier stretched hero. */
+@media (max-width:760px){
+  html,body{overflow-x:clip}
+  .container{width:calc(100% - 26px)}
+  .announcement{height:27px}
+  .announcement-inner{min-height:27px;font-size:8px;letter-spacing:.12px;white-space:nowrap}
+  .site-header{height:65px;box-shadow:0 1px 0 #e1b95d2c}
+  .header-content{height:65px;min-height:65px;gap:6px}
+  .brand{min-width:0;max-width:calc(100% - 96px);gap:7px}
+  .brand-seal{width:39px;height:39px;flex:none}
+  .brand-copy strong{font-size:10.5px;line-height:1.35;white-space:normal}
+  .brand-copy small{font-size:7px;line-height:1.25;white-space:nowrap;letter-spacing:.2px}
+  .header-actions{gap:5px;flex:none}
+  .header-actions .search-btn{display:none}
+  .header-actions .partner-btn{display:none}
+  .header-actions .icon-btn{width:34px;height:34px;border-radius:8px;border-color:#e0be754d}
+  .count-indicator{top:-6px;right:-4px}
+  .menu-btn{display:grid}
+  .main-nav{top:65px;height:calc(100dvh - 65px)}
+  .mobile-backdrop{inset:65px 0 0}
+  .hero{min-height:0;background:linear-gradient(140deg,#051a33 0%,#0b2c50 64%,#06213f 100%)}
+  .hero::before{background:radial-gradient(circle at 78% 25%,#d8a6551c,transparent 35%)}
+  .hero-supermarket{display:none}
+  .hero-arc{opacity:.28}
+  .hero-layout{display:block;position:relative;min-height:0;isolation:isolate}
+  .hero-content{position:relative;z-index:2;padding:23px 1px 15px;max-width:none}
+  .hero-eyebrow{font-size:7.5px;letter-spacing:.8px;margin:0 0 10px;white-space:normal;max-width:95%}
+  .hero-eyebrow span{width:21px;flex:none}
+  .desktop-hero-headline{display:none}
+  .hero h1.mobile-hero-headline{
+    display:block;
+    max-width:64%;
+    margin:0 0 10px;
+    font-size:clamp(23px,6.2vw,29px);
+    letter-spacing:-.45px;
+    line-height:1.22;
+    color:white;
+    font-weight:900;
+    text-shadow:0 2px 10px #03142944;
+  }
+  .hero h1.mobile-hero-headline em{font-family:Georgia,serif;color:#f4ce79}
+  .mobile-hero-headline span{color:#f1c472;letter-spacing:-.9px;font-size:.94em}
+  .hero-content h2{display:none}
+  .hero-content>p{
+    max-width:100%;
+    margin:12px 0 16px;
+    color:#d8e5f1;
+    font-size:10.4px;
+    line-height:1.72;
+    letter-spacing:0;
+  }
+  .hero-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:none;margin:0}
+  .hero-buttons .btn{width:100%;height:39px;min-height:39px;padding:0 8px;gap:5px;font-size:10px;line-height:1.2;border-radius:9px;white-space:nowrap}
+  .hero-buttons .btn svg{width:13px;height:13px}
+  .hero-highlights{margin-top:14px;gap:6px;justify-content:space-between;flex-wrap:nowrap}
+  .hero-highlights span{font-size:8.3px;gap:4px;white-space:nowrap;color:#e7edf6}
+  .hero-highlights svg{width:14px;height:14px;flex:none;color:#edc36e}
+  .hero-art{
+    display:block;
+    position:absolute;
+    right:-1px;
+    top:51px;
+    width:45.5%;
+    height:178px;
+    margin:0;
+    padding:0;
+    transform:none;
+    z-index:1;
+    pointer-events:none;
+    overflow:hidden;
+    border:1px solid #d9ad5a24;
+    border-radius:11px 0 0 11px;
+    background:
+      linear-gradient(90deg,#08244488 0%,#0824442b 30%,#061b34a3 100%),
+      url('https://images.unsplash.com/photo-1604719312566-8912e9c8a213?w=680&q=85') center / cover;
+    box-shadow:-8px 13px 20px #04122765;
+  }
+  .hero-art::after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(180deg,transparent,#06172ddc);z-index:0}
+  .hero-art .hero-ring{display:none}
+  .hero-art .hero-logo-disc{
+    display:grid;
+    left:50%;
+    top:15px;
+    width:77px;
+    height:77px;
+    transform:translateX(-50%);
+    border:0;
+    z-index:2;
+    box-shadow:0 0 0 3px #e3b75a,0 4px 12px #030e23b0;
+  }
+  .hero-art .hero-logo-disc img{width:100%;height:100%;object-fit:cover}
+  .hero-art .hero-logo-name{top:103px;left:50%;width:100%;transform:translateX(-50%);z-index:2}
+  .hero-art .hero-logo-name strong{font-size:11px;line-height:1.2;color:#ffe3a1}
+  .hero-art .hero-logo-name small{font-size:5.6px;letter-spacing:.2px;white-space:normal}
+  .hero-art::before{content:"ศุภลักษณ์ 1985";position:absolute;z-index:2;left:0;right:0;bottom:14px;text-align:center;color:#ffdc9d;font-weight:800;font-size:10px;text-shadow:0 1px 3px #00152c}
+  .usp-strip{display:none}
+  .services-section{padding:13px 0 18px;background:#072342;border:0}
+  .services-layout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  .services-intro{grid-column:1/-1;text-align:center;padding:0 0 10px}
+  .services-intro .section-title .eyebrow-dark{display:none}
+  .services-intro .section-title h2{font-size:19px;line-height:1.25;color:#f5c674;margin:0}
+  .services-intro .section-title h2::before{content:"";display:inline-block;width:26px;height:1px;background:#d9ad58;vertical-align:middle;margin-right:8px}
+  .services-intro .section-title h2::after{content:"";display:inline-block;width:26px;height:1px;background:#d9ad58;vertical-align:middle;margin-left:8px}
+  .services-intro .section-title p,.services-intro .gold-underline{display:none}
+  .service-card,.service-card.retail{
+    min-width:0;
+    height:165px;
+    min-height:165px;
+    padding:0;
+    border-radius:11px;
+    background:#09213e;
+    border:1px solid #e8bf7747;
+    box-shadow:0 5px 15px #0005;
+    color:#fff;
+  }
+  .service-card .service-photo{background-position:center;opacity:.8}
+  .service-card:after,.service-card.retail:after{
+    background:linear-gradient(180deg,#051a3220 10%,#05182d99 58%,#031325ef 100%);
+  }
+  .service-content{padding:9px;height:100%}
+  .service-card-top{flex-direction:row;align-items:flex-start}
+  .service-card-top>span{font-size:0;line-height:0}
+  .service-icon,.retail .service-icon{color:#f2ca75}
+  .service-icon svg{width:20px;height:20px}
+  .service-body{padding-top:8px}
+  .service-body h3{font-size:12px;line-height:1.28;color:white;margin:0 0 4px;font-weight:850}
+  .service-body p,.retail .service-body p{font-size:8.7px;color:#e0e8f2;line-height:1.38;min-height:0;margin:0 0 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .service-body .text-link,.retail .service-body .text-link{color:#f5ce80;font-size:9px;line-height:1.2}
+  .service-body .text-link svg{width:13px;height:13px}
+  .categories-section{padding:10px 0 15px;background:#072342;border:0}
+  .categories-head{margin:0 0 9px;align-items:center}
+  .categories-head .section-title .eyebrow-dark{display:none}
+  .categories-head .section-title h2{font-size:17px;color:#f7cc7d;line-height:1.3}
+  .categories-head .section-title p,.categories-head .gold-underline{display:none}
+  .all-categories{color:#eaf4fd;font-size:9px;min-height:26px;margin:0;padding:0}
+  .all-categories svg{width:13px;height:13px}
+  .categories-grid{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:6px;
+    overflow:visible;
+    width:100%;
+    padding:0;
+  }
+  .category-card{
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    border-radius:9px;
+    background:#f9f8f5;
+    border:1px solid #f4e0bf88;
+    box-shadow:0 4px 13px #010f2355;
+    overflow:hidden;
+    scroll-snap-align:unset;
+  }
+  .category-card:nth-child(n+6){display:none}
+  .category-art{height:77px;background:linear-gradient(160deg,#f9f9f7,#e6e3dc);padding:2px}
+  .category-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 2px #152b3a15)}
+  .category-caption{
+    background:#f9f8f5;
+    color:#081c32;
+    text-align:center;
+    font-size:9px;
+    font-weight:850;
+    padding:4px 2px 6px;
+    line-height:1.4;
+    min-height:39px;
+    display:grid;
+    place-content:center;
+    flex:1;
+  }
+  .category-caption svg{display:none}
+  .mobile-trust{display:block;background:#072342;color:#fff;padding:4px 0 18px}
+  .mobile-trust h2{font-size:15px;color:#f6c875;margin:0 0 10px;text-align:left;line-height:1.4}
+  .mobile-trust h2 span{color:#e7eaf1}
+  .mobile-trust-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #e0b97040;border-radius:11px;background:#0d2b4f;overflow:hidden}
+  .mobile-trust-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;padding:9px 3px 10px;min-width:0}
+  .mobile-trust-item:not(:last-child){border-right:1px solid #dfbc7640}
+  .mobile-trust-item svg{color:#f6c76d;margin-bottom:3px;width:22px;height:22px}
+  .mobile-trust-item strong{font-size:9px;color:#fff;line-height:1.25}
+  .mobile-trust-item small{font-size:7.5px;color:#cedbea;line-height:1.3}
+  .work-section{padding:24px 0;background:#fff;color:#172b43}
+  .work-intro .section-title h2{color:#192e48}
+  .work-intro .section-title p{color:#677c91}
+  .about-band{background:linear-gradient(115deg,#071a32,#143f65)}
+}
+@media (max-width:390px){
+  .hero h1.mobile-hero-headline{font-size:clamp(21px,6.1vw,24px)}
+  .hero-art{width:44%;height:159px;top:52px}
+  .hero-art .hero-logo-disc{width:69px;height:69px;top:14px}
+  .hero-art .hero-logo-name{top:95px}
+  .hero-art::before{font-size:9px;bottom:9px}
+  .hero-highlights span{font-size:7.5px}
+  .service-card{height:157px;min-height:157px}
+  .service-content{padding:7px}
+  .service-body h3{font-size:11px}
+  .service-body p{font-size:8px}
+  .category-art{height:69px}
+  .category-caption{font-size:8.3px}
+}
