@@ -145,7 +145,8 @@ export default function Home() {
             <h1 className="desktop-hero-headline">บริษัท ศุภลักษณ์ <em>1985</em> จำกัด<span className="english-heading">SUPHALAK 1985 CO., LTD.</span></h1>
             <h1 className="mobile-hero-headline">ศุภลักษณ์ <em>1985</em><br/>ครบทุกความต้องการ<br/><span>สินค้าร้านค้าและค้าส่ง</span><br/>ในที่เดียว</h1>
             <h2>ครบทุกความต้องการสินค้าอุปโภคบริโภค<br/>ทั้งค้าปลีก ค้าส่ง และบริการจัดร้านค้าในที่เดียว</h2>
-            <p>พันธมิตรด้านสินค้าอุปโภคบริโภคสำหรับทุกความต้องการ ครอบคลุมการจัดหา กระจายสินค้า และบริการจัดร้านอย่างมืออาชีพ เพื่อสนับสนุนธุรกิจของคุณ</p>
+            <p className="hero-desktop-description">พันธมิตรด้านสินค้าอุปโภคบริโภคสำหรับทุกความต้องการ ครอบคลุมการจัดหา กระจายสินค้า และบริการจัดร้านอย่างมืออาชีพ เพื่อสนับสนุนธุรกิจของคุณ</p>
+            <p className="hero-mobile-description">สินค้าครบทั้งค้าปลีกและค้าส่ง พร้อมบริการจัดหาและสนับสนุนร้านค้าอย่างมืออาชีพ</p>
             <div className="hero-buttons">
               <button type="button" className="btn btn-gold" onClick={() => openCatalog()}>เลือกดูสินค้าและหมวดหมู่ <Icon name="chevron" size={17}/></button>
               <button type="button" className="btn btn-outline" onClick={() => setPanel("quote")}>ติดต่อขอใบเสนอราคา <Icon name="chevron" size={17}/></button>
